@@ -1,0 +1,6 @@
+<legend><h1>{{ question.question_text }}</h1></legend>
+<ul>
+  {% for choice in choices %}
+    <li>{{ choice.choice_text }} | {{ choice.votes }}</li>
+  {% endfor %}
+</ul>
